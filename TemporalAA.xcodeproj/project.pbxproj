@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A16E7D31FE3569500E8C2BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A16E7CF1FE3569500E8C2BD /* LaunchScreen.storyboard */; };
+		3A16E7D71FE356CB00E8C2BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A16E7D51FE356CB00E8C2BD /* Main.storyboard */; };
+		3A16E7DA1FE356DE00E8C2BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A16E7D81FE356DE00E8C2BD /* Main.storyboard */; };
+		3A16E7DB1FE3576B00E8C2BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E30AD911E53F6EC008901CB /* main.m */; };
+		3A3822D52150558A00FEC2EA /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 6E30AD711E53F6EB008901CB /* Models */; };
+		3A420E231FE3544300DA4ADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E30AD721E53F6EB008901CB /* Assets.xcassets */; };
+		3A420E241FE3544C00DA4ADB /* AAPLRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E30AD6A1E53F6EA008901CB /* AAPLRenderer.mm */; };
+		3A420E251FE3544C00DA4ADB /* AAPLMesh.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E30AD6C1E53F6EA008901CB /* AAPLMesh.mm */; };
+		3A420E261FE3544C00DA4ADB /* AAPLShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6E30AD6E1E53F6EA008901CB /* AAPLShaders.metal */; };
+		3A420E271FE3544C00DA4ADB /* AAPLMathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E30AD701E53F6EA008901CB /* AAPLMathUtilities.m */; };
+		3A420E391FE354BE00DA4ADB /* AAPLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A420E331FE354BE00DA4ADB /* AAPLAppDelegate.m */; };
+		3A420E3A1FE354BE00DA4ADB /* AAPLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A420E361FE354BE00DA4ADB /* AAPLViewController.m */; };
+		3A420E3B1FE354BE00DA4ADB /* AAPLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A420E361FE354BE00DA4ADB /* AAPLViewController.m */; };
+		6E30AD921E53F6EC008901CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E30AD911E53F6EC008901CB /* main.m */; };
+		6E30AD9E1E53F6EC008901CB /* AAPLRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E30AD6A1E53F6EA008901CB /* AAPLRenderer.mm */; };
+		6E30ADA21E53F6EC008901CB /* AAPLMesh.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E30AD6C1E53F6EA008901CB /* AAPLMesh.mm */; };
+		6E30ADA61E53F6EC008901CB /* AAPLShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6E30AD6E1E53F6EA008901CB /* AAPLShaders.metal */; };
+		6E30ADAA1E53F6EC008901CB /* AAPLMathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E30AD701E53F6EA008901CB /* AAPLMathUtilities.m */; };
+		6E30ADAC1E53F6EC008901CB /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 6E30AD711E53F6EB008901CB /* Models */; };
+		6E30ADAE1E53F6EC008901CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E30AD721E53F6EB008901CB /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03DF3E8824A2A25783257D83 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		3A139FD91EA173770058FCA9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3A16E7D01FE3569500E8C2BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = iOS/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A16E7D61FE356CB00E8C2BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = iOS/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A16E7D91FE356DE00E8C2BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = macOS/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A420E011FE3531B00DA4ADB /* TemporalAA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemporalAA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A420E1F1FE3542300DA4ADB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = macOS/Info.plist; sourceTree = "<group>"; };
+		3A420E211FE3543200DA4ADB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = iOS/Info.plist; sourceTree = "<group>"; };
+		3A420E331FE354BE00DA4ADB /* AAPLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLAppDelegate.m; sourceTree = "<group>"; };
+		3A420E341FE354BE00DA4ADB /* AAPLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLAppDelegate.h; sourceTree = "<group>"; };
+		3A420E351FE354BE00DA4ADB /* AAPLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLViewController.h; sourceTree = "<group>"; };
+		3A420E361FE354BE00DA4ADB /* AAPLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLViewController.m; sourceTree = "<group>"; };
+		6E30AD691E53F6EA008901CB /* AAPLRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAPLRenderer.h; sourceTree = "<group>"; };
+		6E30AD6A1E53F6EA008901CB /* AAPLRenderer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AAPLRenderer.mm; sourceTree = "<group>"; };
+		6E30AD6B1E53F6EA008901CB /* AAPLMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAPLMesh.h; sourceTree = "<group>"; };
+		6E30AD6C1E53F6EA008901CB /* AAPLMesh.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AAPLMesh.mm; sourceTree = "<group>"; };
+		6E30AD6D1E53F6EA008901CB /* AAPLShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAPLShaderTypes.h; sourceTree = "<group>"; };
+		6E30AD6E1E53F6EA008901CB /* AAPLShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = AAPLShaders.metal; sourceTree = "<group>"; };
+		6E30AD6F1E53F6EA008901CB /* AAPLMathUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAPLMathUtilities.h; sourceTree = "<group>"; };
+		6E30AD701E53F6EA008901CB /* AAPLMathUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAPLMathUtilities.m; sourceTree = "<group>"; };
+		6E30AD711E53F6EB008901CB /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
+		6E30AD721E53F6EB008901CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E30AD8E1E53F6EC008901CB /* TemporalAA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemporalAA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E30AD911E53F6EC008901CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.simpleColoring; };
+		6E35902A1E6E68B500965411 /* AAPLRendererUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAPLRendererUtils.h; sourceTree = "<group>"; };
+		D937B6743D46A99F68311025 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A420DFE1FE3531B00DA4ADB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E30AD8B1E53F6EC008901CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		387A1C79AD53C5B00657BFC3 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				03DF3E8824A2A25783257D83 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		3A420E1D1FE3533F00DA4ADB /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				3A16E7D81FE356DE00E8C2BD /* Main.storyboard */,
+				3A420E1F1FE3542300DA4ADB /* Info.plist */,
+			);
+			name = macOS;
+			sourceTree = "<group>";
+		};
+		3A420E1E1FE3536800DA4ADB /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3A16E7CF1FE3569500E8C2BD /* LaunchScreen.storyboard */,
+				3A16E7D51FE356CB00E8C2BD /* Main.storyboard */,
+				3A420E211FE3543200DA4ADB /* Info.plist */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6E30AD631E53F6EA008901CB = {
+			isa = PBXGroup;
+			children = (
+				3A139FD91EA173770058FCA9 /* README.md */,
+				6E30AD681E53F6EA008901CB /* Renderer */,
+				6E30AD8F1E53F6EC008901CB /* Application */,
+				6E30AD781E53F6EB008901CB /* Products */,
+				387A1C79AD53C5B00657BFC3 /* Configuration */,
+				C74E4A84B37E5AF2BFAC56E6 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		6E30AD681E53F6EA008901CB /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				6E35902A1E6E68B500965411 /* AAPLRendererUtils.h */,
+				6E30AD691E53F6EA008901CB /* AAPLRenderer.h */,
+				6E30AD6A1E53F6EA008901CB /* AAPLRenderer.mm */,
+				6E30AD6B1E53F6EA008901CB /* AAPLMesh.h */,
+				6E30AD6C1E53F6EA008901CB /* AAPLMesh.mm */,
+				6E30AD6D1E53F6EA008901CB /* AAPLShaderTypes.h */,
+				6E30AD6E1E53F6EA008901CB /* AAPLShaders.metal */,
+				6E30AD6F1E53F6EA008901CB /* AAPLMathUtilities.h */,
+				6E30AD701E53F6EA008901CB /* AAPLMathUtilities.m */,
+				6E30AD711E53F6EB008901CB /* Models */,
+				6E30AD721E53F6EB008901CB /* Assets.xcassets */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		6E30AD781E53F6EB008901CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E30AD8E1E53F6EC008901CB /* TemporalAA.app */,
+				3A420E011FE3531B00DA4ADB /* TemporalAA.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E30AD8F1E53F6EC008901CB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3A420E341FE354BE00DA4ADB /* AAPLAppDelegate.h */,
+				3A420E331FE354BE00DA4ADB /* AAPLAppDelegate.m */,
+				3A420E351FE354BE00DA4ADB /* AAPLViewController.h */,
+				3A420E361FE354BE00DA4ADB /* AAPLViewController.m */,
+				6E30AD911E53F6EC008901CB /* main.m */,
+				3A420E1E1FE3536800DA4ADB /* iOS */,
+				3A420E1D1FE3533F00DA4ADB /* macOS */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C74E4A84B37E5AF2BFAC56E6 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				D937B6743D46A99F68311025 /* LICENSE.txt */,
+			);
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A420E001FE3531B00DA4ADB /* TemporalAA-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A420E1C1FE3531B00DA4ADB /* Build configuration list for PBXNativeTarget "TemporalAA-iOS" */;
+			buildPhases = (
+				3A420DFD1FE3531B00DA4ADB /* Sources */,
+				3A420DFE1FE3531B00DA4ADB /* Frameworks */,
+				3A420DFF1FE3531B00DA4ADB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TemporalAA-iOS";
+			productName = "TemporalAA-iOS";
+			productReference = 3A420E011FE3531B00DA4ADB /* TemporalAA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E30AD8D1E53F6EC008901CB /* TemporalAA-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E30ADB41E53F6EC008901CB /* Build configuration list for PBXNativeTarget "TemporalAA-macOS" */;
+			buildPhases = (
+				6E30AD8A1E53F6EC008901CB /* Sources */,
+				6E30AD8B1E53F6EC008901CB /* Frameworks */,
+				6E30AD8C1E53F6EC008901CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TemporalAA-macOS";
+			productName = macOS;
+			productReference = 6E30AD8E1E53F6EC008901CB /* TemporalAA.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E30AD641E53F6EA008901CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					3A420E001FE3531B00DA4ADB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					6E30AD8D1E53F6EC008901CB = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6E30AD671E53F6EA008901CB /* Build configuration list for PBXProject "TemporalAA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E30AD631E53F6EA008901CB;
+			productRefGroup = 6E30AD781E53F6EB008901CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E30AD8D1E53F6EC008901CB /* TemporalAA-macOS */,
+				3A420E001FE3531B00DA4ADB /* TemporalAA-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A420DFF1FE3531B00DA4ADB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3822D52150558A00FEC2EA /* Models in Resources */,
+				3A16E7D31FE3569500E8C2BD /* LaunchScreen.storyboard in Resources */,
+				3A420E231FE3544300DA4ADB /* Assets.xcassets in Resources */,
+				3A16E7D71FE356CB00E8C2BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E30AD8C1E53F6EC008901CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A16E7DA1FE356DE00E8C2BD /* Main.storyboard in Resources */,
+				6E30ADAC1E53F6EC008901CB /* Models in Resources */,
+				6E30ADAE1E53F6EC008901CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A420DFD1FE3531B00DA4ADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A420E261FE3544C00DA4ADB /* AAPLShaders.metal in Sources */,
+				3A420E251FE3544C00DA4ADB /* AAPLMesh.mm in Sources */,
+				3A420E271FE3544C00DA4ADB /* AAPLMathUtilities.m in Sources */,
+				3A420E241FE3544C00DA4ADB /* AAPLRenderer.mm in Sources */,
+				3A420E3B1FE354BE00DA4ADB /* AAPLViewController.m in Sources */,
+				3A16E7DB1FE3576B00E8C2BD /* main.m in Sources */,
+				3A420E391FE354BE00DA4ADB /* AAPLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E30AD8A1E53F6EC008901CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E30ADA61E53F6EC008901CB /* AAPLShaders.metal in Sources */,
+				6E30ADAA1E53F6EC008901CB /* AAPLMathUtilities.m in Sources */,
+				3A420E3A1FE354BE00DA4ADB /* AAPLViewController.m in Sources */,
+				6E30AD9E1E53F6EC008901CB /* AAPLRenderer.mm in Sources */,
+				6E30ADA21E53F6EC008901CB /* AAPLMesh.mm in Sources */,
+				6E30AD921E53F6EC008901CB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A16E7CF1FE3569500E8C2BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A16E7D01FE3569500E8C2BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3A16E7D51FE356CB00E8C2BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A16E7D61FE356CB00E8C2BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A16E7D81FE356DE00E8C2BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A16E7D91FE356DE00E8C2BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A420E1A1FE3531B00DA4ADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03DF3E8824A2A25783257D83 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"TARGET_IOS=1",
+				);
+				INFOPLIST_FILE = Application/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = TemporalAA;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3A420E1B1FE3531B00DA4ADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03DF3E8824A2A25783257D83 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_IOS=1";
+				INFOPLIST_FILE = Application/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = TemporalAA;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E30ADAF1E53F6EC008901CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03DF3E8824A2A25783257D83 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.TemporalAA";
+				PRODUCT_NAME = TemporalAA;
+			};
+			name = Debug;
+		};
+		6E30ADB01E53F6EC008901CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03DF3E8824A2A25783257D83 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.TemporalAA";
+				PRODUCT_NAME = TemporalAA;
+			};
+			name = Release;
+		};
+		6E30ADB51E53F6EC008901CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03DF3E8824A2A25783257D83 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"TARGET_MACOS=1",
+				);
+				INFOPLIST_FILE = Application/macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = TemporalAA;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6E30ADB61E53F6EC008901CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03DF3E8824A2A25783257D83 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_MACOS=1";
+				INFOPLIST_FILE = Application/macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.$(PRODUCT_NAME)${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = TemporalAA;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A420E1C1FE3531B00DA4ADB /* Build configuration list for PBXNativeTarget "TemporalAA-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A420E1A1FE3531B00DA4ADB /* Debug */,
+				3A420E1B1FE3531B00DA4ADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E30AD671E53F6EA008901CB /* Build configuration list for PBXProject "TemporalAA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E30ADAF1E53F6EC008901CB /* Debug */,
+				6E30ADB01E53F6EC008901CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E30ADB41E53F6EC008901CB /* Build configuration list for PBXNativeTarget "TemporalAA-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E30ADB51E53F6EC008901CB /* Debug */,
+				6E30ADB61E53F6EC008901CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E30AD641E53F6EA008901CB /* Project object */;
+}
